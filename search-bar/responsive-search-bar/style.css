@@ -1,0 +1,93 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 16px;
+  color: rgba(255, 255, 255, 0.9);
+  background-image: url(images/sunset.jpg);
+  background-size: cover;
+}
+
+body {
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+div {
+  width: 100%;
+  min-height: 50vh;
+  flex-direction: column;
+}
+
+h1 {
+  font-family: "Roboto", sans-serif;
+  font-size: 3rem;
+  font-style: italic;
+  letter-spacing: 0.1em;
+  text-align: center;
+  text-shadow: 2px 2px 5px #333333;
+  margin-bottom: 0.5rem;
+}
+
+input,
+button {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 1.2rem;
+}
+
+.flex-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.offscreen {
+  position: absolute;
+  left: -1000px;
+}
+
+.search-form {
+  background: rgba(255, 255, 255, 0.3);
+  border: 1px solid rgb(0, 0, 0);
+  border-radius: 500px;
+  max-width: 650px;
+  display: flex;
+}
+
+.search-text {
+  color: #333333;
+  flex-grow: 1;
+  padding: 0.5em 0.25em 0.5em 1em;
+  border: none;
+  background: transparent;
+  outline: none;
+}
+
+.search-button {
+  padding: 0.5em 0.75em 0.5em 0.5em;
+  background: transparent;
+  border: none;
+  outline: none;
+  color: rgba(255, 255, 255, 0.8);
+}
+
+.search-button:hover,
+.search-button:focus {
+  color: rgb(255, 255, 255);
+  text-shadow: 2px 2px 2px #333333;
+}
+
+@media only screen and (min-width: 768px) {
+  input,
+  button {
+    font-size: 2em;
+  }
+}
