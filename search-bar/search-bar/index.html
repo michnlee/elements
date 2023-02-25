@@ -1,12 +1,10 @@
-<!-- https://www.youtube.com/watch?v=ssNeyFXS-lQ -->
-
 <!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Styled Search Bar #1</title>
+    <title>Basic Minimalistic Search Bar</title>
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
@@ -17,21 +15,28 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <h1>Styled Search Bar #1</h1>
-
-    <form action="index.html" method="get">
-      <div class="searchbar">
-        <input
-          type="text"
-          placeholder="Search Videos"
-          name="q"
-          class="searchbar-input"
-        />
-
-        <button type="submit" class="searchbar-button">
+    <div class="search-container">
+      <form
+        action="https://www.google.com/search"
+        method="get"
+        class="search-box"
+      >
+        <button type="submit" class="search-icon">
           <i class="fa-solid fa-magnifying-glass"></i>
         </button>
-      </div>
-    </form>
+
+        <input
+          type="text"
+          placeholder="Search..."
+          name="q"
+          id="search"
+          class="search"
+        />
+
+        <button type="submit" class="voice-search">
+          <i class="fa-solid fa-microphone"></i>
+        </button>
+      </form>
+    </div>
   </body>
 </html>
