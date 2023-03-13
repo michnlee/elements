@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Drop Down Menu</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+      integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <nav class="navbar flex-row">
+      <div class="menu flex-row">
+        <a href="#"><h1 class="logo">LOGO</h1></a>
+
+        <ul class="navlinks flex-row">
+          <li>
+            <a href="#">Our Products</a>
+            <ul class="product-links dropdown">
+              <li><a href="#">Home</a></li>
+              <li><a href="#">Office</a></li>
+              <li><a href="#">Industrial</a></li>
+            </ul>
+          </li>
+
+          <li>
+            <a href="#">Our Services</a>
+            <ul class="dropdown">
+              <li><a href="#">Site Vists</a></li>
+              <li><a href="#">Inspections</a></li>
+              <li><a href="#">Construction</a></li>
+              <li><a href="#">Maintenance</a></li>
+            </ul>
+          </li>
+
+          <li>
+            <a href="#">Get To Know Us</a>
+            <ul class="dropdown">
+              <li><a href="#">Our Story</a></li>
+              <li><a href="#">Our Mission</a></li>
+              <li><a href="#">Our Causes</a></li>
+            </ul>
+          </li>
+
+          <li><a href="#">Contact Us</a></li>
+        </ul>
+      </div>
+
+      <div class="client-user-portal">
+        <a href=""><i class="fa-solid fa-user"></i></a>
+      </div>
+    </nav>
+  </body>
+</html>
